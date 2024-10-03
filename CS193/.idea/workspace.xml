@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dea3e770-1277-456f-9914-df2d060fb4de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/homework-3-dylmill8/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-3-dylmill8/.idea/homework-3-dylmill8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-3-dylmill8/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-3-dylmill8/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-3-dylmill8/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/homework-1-dylmill8" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2mwKr0R5AlnEL5YvZpn9lfNa9Jj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/dylanmiller/Downloads/College/Java Programming/CS193"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dea3e770-1277-456f-9914-df2d060fb4de" name="Changes" comment="" />
+      <created>1727982393705</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727982393705</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CS193.iml" filepath="$PROJECT_DIR$/.idea/CS193.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework-1-dylmill8/.DO_NOT_DELETE/Homework/Homework.iml" filepath="$PROJECT_DIR$/homework-1-dylmill8/.DO_NOT_DELETE/Homework/Homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework-1-dylmill8/ORIGIN/Homework/Homework1.iml" filepath="$PROJECT_DIR$/homework-1-dylmill8/ORIGIN/Homework/Homework1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework-1-dylmill8/.DO_NOT_DELETE/Programs/Programs.iml" filepath="$PROJECT_DIR$/homework-1-dylmill8/.DO_NOT_DELETE/Programs/Programs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework-1-dylmill8/ORIGIN/Programs/Programs1.iml" filepath="$PROJECT_DIR$/homework-1-dylmill8/ORIGIN/Programs/Programs1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework-2-dylmill8/homework-2-dylmill8.iml" filepath="$PROJECT_DIR$/homework-2-dylmill8/homework-2-dylmill8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework-4-dylmill8/homework-4-dylmill8.iml" filepath="$PROJECT_DIR$/homework-4-dylmill8/homework-4-dylmill8.iml" />
+    </modules>
+  </component>
+</project>
