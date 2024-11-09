@@ -72,6 +72,16 @@ public class Main {
         NLL3.reverse();
         NumLinkedList.print(NLL3);
         System.out.printf("%d, %b\n", NLL3.size(), NLL3.isSorted());
+
+        HW4_abc123 hash = new HW4_abc123(13);
+        hash.linearProbingInsert(7);
+        hash.linearProbingInsert(2);
+        hash.linearProbingInsert(7);
+        hash.linearProbingInsert(8);
+        hash.linearProbingInsert(15);
+        hash.linearProbingInsert(14);
+        hash.doubleHashingInsert(9, 25);
+        hash.doubleHashingInsert(9, 25);
     }
 
     /* implements a stack using a single queue given as input */
@@ -282,5 +292,46 @@ public class Main {
             System.out.println();
         }
 
+    }
+
+    /* HW4_abc123 implements a hash table as an array with linear probing, double hashing, and hash table printing */
+    public static class HW4_abc123 {
+        Integer[] hash;
+
+        public HW4_abc123(int size) {
+            this.hash = new Integer[size];
+        }
+
+        void linearProbingInsert(int key) {
+            int i = key % hash.length;
+            int loop = i;
+            while (hash[i] != null) {
+                i = (i + 1) % hash.length;
+                if (loop == i) { return; }
+            }
+            hash[i] = key;
+            printTable();
+        }
+
+        void doubleHashingInsert(int key, int prime) {
+            int i = key % hash.length;
+            int step = prime - (key % prime);
+            int loop = 0;
+            while (hash[i] != null) {
+                i = (i + step) % hash.length;
+                if (loop > hash.length) { return; }
+                loop++;
+            }
+            hash[i] = key;
+            printTable();
+        }
+
+        void printTable() {
+            for (int i = 0; i < hash.length; i++) {
+                if (i == hash.length - 1) {
+                    System.out.println(hash[i]);
+                } else { System.out.print(hash[i] + ", "); }
+            }
+        }
     }
 }
