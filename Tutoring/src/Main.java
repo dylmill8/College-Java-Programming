@@ -1,10 +1,12 @@
 import java.util.EmptyStackException;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
 
         /* TESTING */
-
+        
+        /*
         // QueuedStack
         java.util.Queue<Integer> q = new java.util.LinkedList<>();
         QueuedStack<Integer> QS = new QueuedStack<>(q);
@@ -82,6 +84,12 @@ public class Main {
         hash.linearProbingInsert(14);
         hash.doubleHashingInsert(9, 25);
         hash.doubleHashingInsert(9, 25);
+        */
+
+        int[] array = {8, 13, 27, 2, 1, 7, 6, 11, 8, 4, 5};
+        // insertionSort(array);
+        // mergeSort(array);
+        quickSort(array, 0, array.length - 1);
     }
 
     /* implements a stack using a single queue given as input */
@@ -333,5 +341,97 @@ public class Main {
                 } else { System.out.print(hash[i] + ", "); }
             }
         }
+    }
+
+    public static void insertionSort(int[] array) {
+        int j;
+        for (int i = 0; i < array.length - 1; i++) {
+            j = i + 1;
+            if (array[j] > array[i]) {
+                while (j > 0 && array[j] > array[j - 1]) {
+                    int temp = array[j];
+                    array[j] = array[j - 1];
+                    array[j - 1] = temp;
+                    j--;
+
+                    for (int k = 0; k < array.length - 1; k++) {
+                        System.out.print(array[k]+", ");
+                    }
+                    System.out.println(array[array.length - 1]);
+                }
+            }
+        }
+    }
+
+    public static void mergeSort(int[] array) {
+        if (array.length <= 1) { return; }
+        int mid = array.length / 2;
+        int[] L = new int[mid];
+        int[] R = new int[array.length - mid];
+
+        for (int i = 0; i < mid; i++) {
+            L[i] = array[i];
+        }
+        for (int i = mid; i < array.length; i++) {
+            R[i - mid] = array[i];
+        }
+
+        mergeSort(L);
+        mergeSort(R);
+
+        int i = 0, j = 0, k = 0;
+        while (i < L.length && j < R.length) {
+            if (L[i] >= R[j]) {
+                array[k++] = L[i++];
+            } else {
+                array[k++] = R[j++];
+            }
+        }
+
+        for (; i < L.length; i++) {
+            array[k++] = L[i];
+        }
+        for (; j < R.length; j++) {
+            array[k++] = R[j];
+        }
+
+        for (int p = 0; p < array.length - 1; p++) {
+            System.out.print(array[p]+", ");
+        }
+        System.out.println(array[array.length - 1]);
+    }
+
+    public static void quickSort(int[] array, int low, int high) {
+        if (low < high) {
+            int pivot = array[high];
+            int i = (low - 1);
+
+            for (int j = low; j < high; j++) {
+                if (array[j] >= pivot) {
+                    i++;
+
+                    int swapTemp = array[i];
+                    array[i] = array[j];
+                    array[j] = swapTemp;
+                }
+                for (int p = 0; p < array.length - 1; p++) {
+                    System.out.print(array[p]+", ");
+                }
+                System.out.println(array[array.length - 1]);
+            }
+
+            int swapTemp = array[i+1];
+            array[i+1] = array[high];
+            array[high] = swapTemp;
+            
+            for (int p = 0; p < array.length - 1; p++) {
+                System.out.print(array[p]+", ");
+            }
+            System.out.println(array[array.length - 1]);
+
+            quickSort(array, low, i);
+            quickSort(array, i + 2, high);
+        }
+
     }
 }
